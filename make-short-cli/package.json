@@ -1,0 +1,44 @@
+{
+  "name": "make-short-cli",
+  "version": "1.0.0",
+  "description": "A Bun-based Remotion template for TikTok-style captions",
+  "scripts": {
+    "dev": "bunx remotion studio src/captionedvideo/index.ts",
+    "build": "bunx remotion bundle src/captionedvideo/index.ts",
+    "render": "bunx remotion render src/captionedvideo/index.ts",
+    "upgrade": "bunx remotion upgrade",
+    "lint": "eslint src && tsc",
+    "create-subtitles": "bun src/cli/video2sub.ts",
+    "add-subtitle-to-video": "bun src/cli/add-subtitle-to-video.ts",
+    "create-short": "bun src/cli/create-short.ts",
+    "short": "bun src/cli/short.ts",
+    "short-url": "bun src/cli/short-url.ts",
+    "bot": "bun src/bot/bot.ts"
+  },
+  "repository": {},
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/zod-types": "^4.0.0",
+    "@remotion/animation-utils": "^4.0.0",
+    "@remotion/layout-utils": "^4.0.0",
+    "@remotion/media-utils": "^4.0.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "^4.0.0",
+    "telegraf": "^4.16.3",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "^4.0.0",
+    "@remotion/install-whisper-cpp": "^4.0.0",
+    "@remotion/captions": "^4.0.0",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.19.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "private": true,
+  "packageManager": "bun@1.3.10"
+}
